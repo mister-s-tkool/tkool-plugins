@@ -1,2 +1,2 @@
 # tkool-plugins
-Plugins for RPG maker 
+Plugins for RPG maker MZ
