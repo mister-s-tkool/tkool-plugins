@@ -1,0 +1,15 @@
+*
+
+# white list
+!*/
+!.gitignore
+!*.md
+!LICENSE
+!js/plugins/MRS_PM_*.js
+!.test/*
+!package.json
+!package-lock.json
+!tsconfig.core.json
+
+# black list
+node_modules
