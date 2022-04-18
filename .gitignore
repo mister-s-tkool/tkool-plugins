@@ -6,10 +6,10 @@
 !*.md
 !LICENSE
 !js/plugins/MRS_PM_*.js
-!.test/*
+!__test__/*
 !package.json
 !package-lock.json
-!tsconfig.core.json
+!tsconfig.json
 
 # black list
 node_modules

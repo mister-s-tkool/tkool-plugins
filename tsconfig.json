@@ -1,0 +1,12 @@
+{
+  "include": ["pixi.js", "js/*.js", "js/plugins/MRS_PM_*.js"],
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noImplicitAny": false,
+    "lib": ["ES2019"],
+    "typeRoots": ["./@types"],
+    "outDir": "@types",
+    "downlevelIteration": true
+  }
+}

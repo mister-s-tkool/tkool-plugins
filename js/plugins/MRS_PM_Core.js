@@ -150,8 +150,19 @@ var MRS = MRS ?? {};
    * @param {number} defaultValue
    * @returns {number}
    */
-  MRS.PM.Core.parseNumber = (value, defaultValue = 0) =>
-    parseInt(value, 10) || defaultValue;
+  MRS.PM.Core.parseNumber = (value, defaultValue = 0) =>{
+    switch (typeof value) {
+      case 'number':
+        return value
+      case 'string':
+        const parsedValue = parseInt(value, 10)
+        return isNaN(parsedValue) ? defaultValue : parsedValue
+      case 'boolean':
+        return value ? 1 : 0
+      default:
+        return defaultValue
+    }
+  }
 
   /**
    * Parse a value to boolean.
